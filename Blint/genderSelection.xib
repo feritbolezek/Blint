@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GenderSelection" customModule="Blint" customModuleProvider="target">
+            <connections>
+                <outlet property="femaleButton" destination="UIP-0m-e8w" id="CLI-aq-V7b"/>
+                <outlet property="femaleIcon" destination="jJz-d9-mMR" id="mMy-Kd-fes"/>
+                <outlet property="maleButton" destination="xEH-vN-Zaj" id="dnG-WU-0ys"/>
+                <outlet property="maleIcon" destination="nuZ-EB-U9T" id="m2F-ql-Tgc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="278"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FemaleIcon" translatesAutoresizingMaskIntoConstraints="NO" id="jJz-d9-mMR">
+                    <rect key="frame" x="-47.5" y="-1" width="110" height="140"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="58" id="V2S-GX-Led">
+                            <variation key="heightClass=regular-widthClass=regular" constant="110"/>
+                        </constraint>
+                        <constraint firstAttribute="height" constant="85" id="mcV-Z0-nRP">
+                            <variation key="heightClass=regular-widthClass=regular" constant="140"/>
+                        </constraint>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="4ED-cd-2CH" appends="YES" id="3fe-uh-5oy"/>
+                    </connections>
+                </imageView>
+                <imageView alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MaleIcon" translatesAutoresizingMaskIntoConstraints="NO" id="nuZ-EB-U9T">
+                    <rect key="frame" x="312.5" y="14.5" width="110" height="109"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="7Kg-3x-5Yr">
+                            <variation key="heightClass=regular-widthClass=regular" constant="110"/>
+                        </constraint>
+                        <constraint firstAttribute="height" constant="80" id="Bgt-M8-PIB">
+                            <variation key="heightClass=regular-widthClass=regular" constant="109"/>
+                        </constraint>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="IKg-2I-Fne" appends="YES" id="ZuL-QN-j6d"/>
+                    </connections>
+                </imageView>
+                <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UIP-0m-e8w">
+                    <rect key="frame" x="-33.5" y="147" width="82" height="44"/>
+                    <state key="normal" title="Female">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    </variation>
+                    <connections>
+                        <action selector="femaleButtonTapped:" destination="-1" eventType="touchUpInside" id="jHb-hb-cDH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEH-vN-Zaj">
+                    <rect key="frame" x="330" y="147" width="55" height="44"/>
+                    <state key="normal" title="Male">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    </variation>
+                    <connections>
+                        <action selector="maleButtonTapped:" destination="-1" eventType="touchUpInside" id="zAp-BJ-v3g"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ne3-pn-nc7" customClass="ButtonStylings" customModule="Blint" customModuleProvider="target">
+                    <rect key="frame" x="113" y="233" width="150" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Ibz-mY-RpD">
+                            <variation key="heightClass=regular-widthClass=regular" constant="45"/>
+                        </constraint>
+                        <constraint firstAttribute="width" constant="100" id="vin-I6-b42">
+                            <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                        </constraint>
+                    </constraints>
+                    <state key="normal" title="Continue">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    </variation>
+                    <connections>
+                        <action selector="continueTapped:" destination="-1" eventType="touchUpInside" id="K28-RF-HNw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="xEH-vN-Zaj" firstAttribute="centerY" secondItem="UIP-0m-e8w" secondAttribute="centerY" id="Bba-YO-JIv"/>
+                <constraint firstItem="xEH-vN-Zaj" firstAttribute="centerX" secondItem="nuZ-EB-U9T" secondAttribute="centerX" constant="-10" id="CaM-vj-vmr"/>
+                <constraint firstItem="jJz-d9-mMR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-80" id="M9x-HX-h4B">
+                    <variation key="heightClass=regular-widthClass=regular" constant="-180"/>
+                </constraint>
+                <constraint firstItem="UIP-0m-e8w" firstAttribute="centerX" secondItem="jJz-d9-mMR" secondAttribute="centerX" id="N0h-z7-gyD"/>
+                <constraint firstItem="nuZ-EB-U9T" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-70" id="O7i-Pc-TRs"/>
+                <constraint firstAttribute="bottom" secondItem="Ne3-pn-nc7" secondAttribute="bottom" constant="50" id="Uxe-iV-EbF">
+                    <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="Ne3-pn-nc7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cPs-1a-OGe"/>
+                <constraint firstItem="jJz-d9-mMR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-70" id="mpd-hH-DRR"/>
+                <constraint firstItem="UIP-0m-e8w" firstAttribute="top" secondItem="jJz-d9-mMR" secondAttribute="bottom" constant="8" id="nmg-wr-DXW"/>
+                <constraint firstItem="nuZ-EB-U9T" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="80" id="rTm-bh-kSy">
+                    <variation key="heightClass=regular-widthClass=regular" constant="180"/>
+                </constraint>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="32.5" y="-93"/>
+        </view>
+        <tapGestureRecognizer id="4ED-cd-2CH">
+            <connections>
+                <action selector="femaleIconTapped:" destination="-1" id="Uuk-fd-lRI"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="IKg-2I-Fne">
+            <connections>
+                <action selector="maleIconTapped:" destination="-1" id="fQM-pE-gPv"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="FemaleIcon" width="58" height="85"/>
+        <image name="MaleIcon" width="70" height="69"/>
+    </resources>
+</document>

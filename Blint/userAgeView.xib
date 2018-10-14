@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="userAgeView" customModule="Blint" customModuleProvider="target">
+            <connections>
+                <outlet property="ageTextField" destination="ym2-fM-msP" id="jga-y2-65Q"/>
+                <outlet property="errorLabel" destination="ASw-pw-GMp" id="L0i-Ah-4zq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="185"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Your age" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ym2-fM-msP" customClass="SignUpScreenTextFieldStylings" customModule="Blint" customModuleProvider="target">
+                    <rect key="frame" x="-12.5" y="17.5" width="400" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="R9q-eJ-cGr">
+                            <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                        </constraint>
+                        <constraint firstAttribute="width" constant="260" id="mlD-C7-YHZ">
+                            <variation key="heightClass=regular-widthClass=regular" constant="400"/>
+                        </constraint>
+                    </constraints>
+                    <color key="textColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
+                    </variation>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Beu-cz-c5W" customClass="ButtonStylings" customModule="Blint" customModuleProvider="target">
+                    <rect key="frame" x="112" y="140" width="150" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="JC9-88-dNQ">
+                            <variation key="heightClass=regular-widthClass=regular" constant="45"/>
+                        </constraint>
+                        <constraint firstAttribute="width" constant="100" id="XFU-9c-eB0">
+                            <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                        </constraint>
+                    </constraints>
+                    <state key="normal" title="Continue">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    </variation>
+                    <connections>
+                        <action selector="continueTapped:" destination="-1" eventType="touchUpInside" id="BLZ-Tp-XTl"/>
+                    </connections>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ouch. Blint is currently not available for ones under the age of 16." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASw-pw-GMp">
+                    <rect key="frame" x="12.5" y="75.5" width="350" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="223" id="bif-wP-fBN">
+                            <variation key="heightClass=regular-widthClass=regular" constant="350"/>
+                        </constraint>
+                        <constraint firstAttribute="height" constant="34" id="p8a-lB-BlX">
+                            <variation key="heightClass=regular-widthClass=regular" constant="55"/>
+                        </constraint>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                    </variation>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="ym2-fM-msP" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-50" id="BrG-1z-nhG"/>
+                <constraint firstItem="ASw-pw-GMp" firstAttribute="top" secondItem="ym2-fM-msP" secondAttribute="bottom" constant="8" id="CPx-II-I1I"/>
+                <constraint firstItem="ASw-pw-GMp" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="KwK-Lk-wtF"/>
+                <constraint firstItem="ym2-fM-msP" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="PcH-jW-Zxn"/>
+                <constraint firstItem="Beu-cz-c5W" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Vwh-fi-dtB"/>
+                <constraint firstAttribute="bottom" secondItem="Beu-cz-c5W" secondAttribute="bottom" constant="50" id="Xdq-Mi-W05">
+                    <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                </constraint>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="32.5" y="-171.5"/>
+        </view>
+    </objects>
+</document>

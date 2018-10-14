@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad10_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MatchedView" customModule="Blint" customModuleProvider="target">
+            <connections>
+                <outlet property="matchedSubLabel" destination="S2h-U5-Iis" id="YFd-Ju-BCh"/>
+                <outlet property="matchedsAvatar" destination="YIZ-Zy-0Bj" id="gUL-TU-rO9"/>
+                <outlet property="matchersAvatar" destination="bJu-ON-ENL" id="asq-G4-6ZQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gfD-RW-tP9" customClass="staticFullScreenGradientView" customModule="Blint" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="gradientBackground" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="blurEffect" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kmOj9Xe" translatesAutoresizingMaskIntoConstraints="NO" id="bJu-ON-ENL" customClass="avatarView" customModule="Blint" customModuleProvider="target">
+                    <rect key="frame" x="197" y="456" width="200" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="3xM-p3-B2R">
+                            <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                        </constraint>
+                        <constraint firstAttribute="height" constant="120" id="McV-5N-CZC">
+                            <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                        </constraint>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="60"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kmOj9Xe" translatesAutoresizingMaskIntoConstraints="NO" id="YIZ-Zy-0Bj" customClass="avatarView" customModule="Blint" customModuleProvider="target">
+                    <rect key="frame" x="437" y="456" width="200" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="Xmk-y5-8P7">
+                            <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                        </constraint>
+                        <constraint firstAttribute="height" constant="120" id="pfP-jk-tXl">
+                            <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                        </constraint>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="60"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's a match!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNL-du-cjC">
+                    <rect key="frame" x="256" y="358" width="323" height="82"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="38"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="60"/>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="\(NAME) has been added to your chat list, Happy chattings!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2h-U5-Iis">
+                    <rect key="frame" x="167" y="656" width="500" height="160"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="D9f-8f-ICH">
+                            <variation key="heightClass=regular-widthClass=regular" constant="500"/>
+                        </constraint>
+                        <constraint firstAttribute="height" constant="160" id="zl1-uR-kzP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="21"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="33"/>
+                    </variation>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCL-8C-XRK">
+                    <rect key="frame" x="24" y="30" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="d9d-FV-s5i"/>
+                        <constraint firstAttribute="height" constant="32" id="w9w-eZ-es0"/>
+                    </constraints>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" image="Dismiss"/>
+                    <connections>
+                        <action selector="dismissTapped:" destination="-1" eventType="touchUpInside" id="EUg-Gt-2nx"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gfD-RW-tP9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="20b-zf-MDW"/>
+                <constraint firstAttribute="bottom" secondItem="gfD-RW-tP9" secondAttribute="bottom" id="4E4-ty-Z9O"/>
+                <constraint firstItem="YIZ-Zy-0Bj" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="7K8-wB-sxe"/>
+                <constraint firstItem="mCL-8C-XRK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="FfQ-tC-wbz"/>
+                <constraint firstItem="YIZ-Zy-0Bj" firstAttribute="top" secondItem="iNL-du-cjC" secondAttribute="bottom" constant="16" id="IW2-TH-X1j"/>
+                <constraint firstItem="YIZ-Zy-0Bj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="80" id="Ius-LP-ixj">
+                    <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                </constraint>
+                <constraint firstItem="S2h-U5-Iis" firstAttribute="top" secondItem="YIZ-Zy-0Bj" secondAttribute="bottom" id="JGC-gO-WY9"/>
+                <constraint firstItem="mCL-8C-XRK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="JQc-h2-Vbu"/>
+                <constraint firstItem="gfD-RW-tP9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Z7h-Sk-H3E"/>
+                <constraint firstItem="bJu-ON-ENL" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-80" id="bAk-sC-4wi">
+                    <variation key="heightClass=regular-widthClass=regular" constant="-120"/>
+                </constraint>
+                <constraint firstItem="bJu-ON-ENL" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="gUv-2a-bHd"/>
+                <constraint firstItem="iNL-du-cjC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="vpn-wh-qZD"/>
+                <constraint firstAttribute="trailing" secondItem="gfD-RW-tP9" secondAttribute="trailing" id="yT2-aY-h4F"/>
+                <constraint firstItem="S2h-U5-Iis" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="zjR-xw-jnW"/>
+            </constraints>
+            <point key="canvasLocation" x="25" y="52"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Dismiss" width="82" height="82"/>
+        <image name="kmOj9Xe" width="800" height="800"/>
+    </resources>
+</document>

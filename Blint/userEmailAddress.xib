@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserEmailAddressView" customModule="Blint" customModuleProvider="target">
+            <connections>
+                <outlet property="continueButton" destination="IeS-MX-TN4" id="pZn-us-bzm"/>
+                <outlet property="emailTextField" destination="Yzi-XJ-ZGw" id="A7g-gQ-DAa"/>
+                <outlet property="errorMessage" destination="tLZ-At-qlp" id="NqQ-eo-xPm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="185"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IeS-MX-TN4" customClass="ButtonStylings" customModule="Blint" customModuleProvider="target">
+                    <rect key="frame" x="97" y="90" width="180" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="CZY-hq-EYm">
+                            <variation key="heightClass=regular-widthClass=regular" constant="45"/>
+                        </constraint>
+                        <constraint firstAttribute="width" constant="140" id="u5u-Bo-S09">
+                            <variation key="heightClass=regular-widthClass=regular" constant="180"/>
+                        </constraint>
+                    </constraints>
+                    <state key="normal" title="Continue">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    </variation>
+                    <connections>
+                        <action selector="continueTapped:" destination="-1" eventType="touchUpInside" id="eGJ-AY-WFl"/>
+                    </connections>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter a valid email address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tLZ-At-qlp">
+                    <rect key="frame" x="52" y="39" width="271.5" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="gcL-vB-vbr">
+                            <variation key="heightClass=regular-widthClass=regular" constant="35"/>
+                        </constraint>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="13"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                    </variation>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="My email is..." textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yzi-XJ-ZGw" customClass="SignUpScreenTextFieldStylings" customModule="Blint" customModuleProvider="target">
+                    <rect key="frame" x="-13" y="-19" width="400" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="260" id="JMf-u1-amQ">
+                            <variation key="heightClass=regular-widthClass=regular" constant="400"/>
+                        </constraint>
+                        <constraint firstAttribute="height" constant="30" id="Tug-qR-OeG">
+                            <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                        </constraint>
+                    </constraints>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
+                    </variation>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Yzi-XJ-ZGw" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="8kb-ZV-CSo"/>
+                <constraint firstItem="tLZ-At-qlp" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Edn-ed-BoE"/>
+                <constraint firstAttribute="bottom" secondItem="IeS-MX-TN4" secondAttribute="bottom" constant="50" id="Q3x-VF-W4t"/>
+                <constraint firstItem="tLZ-At-qlp" firstAttribute="top" secondItem="Yzi-XJ-ZGw" secondAttribute="bottom" constant="8" id="bLD-at-VXm"/>
+                <constraint firstItem="IeS-MX-TN4" firstAttribute="top" secondItem="tLZ-At-qlp" secondAttribute="bottom" constant="16" id="ivK-sb-9PU"/>
+                <constraint firstItem="IeS-MX-TN4" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="tDU-H4-CTg"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="8.5" y="-142.5"/>
+        </view>
+    </objects>
+</document>
